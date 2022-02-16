@@ -1,8 +1,8 @@
-# java-fundamentals
+# Lab: 01 - Java primitives and control flow
 
-## Lab: 01 - Java primitives and control flow
+[Root Directory](../basics/)
 
-### Feature Tasks
+## Feature Tasks
 
 #### **Pluralize**
 
