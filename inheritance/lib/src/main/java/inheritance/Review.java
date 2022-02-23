@@ -3,7 +3,7 @@ package inheritance;
 public class Review {
     String body = "";
     String author = "";
-    int stars;
+    int stars = 0;
 
     public Review (String body, String author, int stars){
         this.body = body;
