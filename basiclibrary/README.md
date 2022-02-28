@@ -4,7 +4,9 @@
 
 ## Overview
 
-- This lab is dedicated to creating, interacting with and manipulating arrays in Java. Arrays in Java have a fixed size. Arrays are created with a certain size and they never shrink or grow. Java arrays are typed. You can have an array of integers, or an array of strings, but not an array mixed with integers and strings.
+- This lab is dedicated to creating, interacting with and manipulating arrays in Java. 
+- Arrays in Java have a fixed size. Arrays are created with a certain size, and they never shrink or grow.
+- Java arrays are typed. You can have an array of integers, or an array of strings, but not an array mixed with integers and strings.
 
 ## Feature Tasks
 
@@ -22,7 +24,7 @@
 
 #### **Arrays of Arrays**
 
-- Given an array of arrays calculate the average value for each array and return the array with the lowest average.
+- Given an array of arrays, calculate the average value for each array and return the array with the lowest average.
 
 #### **Testing**
 

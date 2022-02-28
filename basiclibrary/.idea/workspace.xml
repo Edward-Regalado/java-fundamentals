@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e67fc9d2-7b32-4ca5-bc0d-e76a79f533fe" name="Changes" comment="" />
+    <list default="true" id="7c6dc343-0cb4-47fa-b62c-2d82268c8716" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/bin/main/basiclibrary/Library.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/bin/test/basiclibrary/LibraryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/basiclibrary/Library.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/basiclibrary/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/basiclibrary/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/basiclibrary/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/basiclibrary/LibraryTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,9 +29,17 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="basiclibrary" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -33,10 +52,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
-  </component>
-  <component name="ProjectId" id="25AwFHmgHy36OLjh5RajU7GGgji" />
+  <component name="ProjectId" id="25iSOx7iJoI3GuMoIbW5ADA0LAc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -45,9 +61,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
-  <component name="RunManager" selected="Gradle.LibraryTest (1)">
-    <configuration name="LibraryTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.LibraryTest.calculateLowestAverageOfDifferentSizeArrays">
+    <configuration name="LibraryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -70,7 +88,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LibraryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LibraryTest.calculateArrayAverageValues" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -83,7 +101,7 @@
           <list>
             <option value=":lib:test" />
             <option value="--tests" />
-            <option value="&quot;LibraryTest&quot;" />
+            <option value="&quot;basiclibrary.LibraryTest.calculateArrayAverageValues&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -93,7 +111,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LibraryTest.calculateAverageTemp" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LibraryTest.calculateArrayAverageWithOnlyOneElement" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -106,7 +124,7 @@
           <list>
             <option value=":lib:test" />
             <option value="--tests" />
-            <option value="&quot;basiclibrary.LibraryTest.calculateAverageTemp&quot;" />
+            <option value="&quot;basiclibrary.LibraryTest.calculateArrayAverageWithOnlyOneElement&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -116,7 +134,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LibraryTest.doesArrayContainDuplicates" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LibraryTest.calculateLowestAverageInArraysOfArrays" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -129,7 +147,30 @@
           <list>
             <option value=":lib:test" />
             <option value="--tests" />
-            <option value="&quot;basiclibrary.LibraryTest.doesArrayContainDuplicates&quot;" />
+            <option value="&quot;basiclibrary.LibraryTest.calculateLowestAverageInArraysOfArrays&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="LibraryTest.calculateLowestAverageOfDifferentSizeArrays" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":lib:test" />
+            <option value="--tests" />
+            <option value="&quot;basiclibrary.LibraryTest.calculateLowestAverageOfDifferentSizeArrays&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -141,21 +182,22 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.LibraryTest (1)" />
-        <item itemvalue="Gradle.LibraryTest.calculateAverageTemp" />
-        <item itemvalue="Gradle.LibraryTest.doesArrayContainDuplicates" />
+        <item itemvalue="Gradle.LibraryTest.calculateLowestAverageOfDifferentSizeArrays" />
+        <item itemvalue="Gradle.LibraryTest.calculateArrayAverageWithOnlyOneElement" />
         <item itemvalue="Gradle.LibraryTest" />
+        <item itemvalue="Gradle.LibraryTest.calculateLowestAverageInArraysOfArrays" />
+        <item itemvalue="Gradle.LibraryTest.calculateArrayAverageValues" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e67fc9d2-7b32-4ca5-bc0d-e76a79f533fe" name="Changes" comment="" />
-      <created>1644983099601</created>
+      <changelist id="7c6dc343-0cb4-47fa-b62c-2d82268c8716" name="Changes" comment="" />
+      <created>1646008386779</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1644983099601</updated>
+      <updated>1646008386779</updated>
     </task>
     <servers />
   </component>
