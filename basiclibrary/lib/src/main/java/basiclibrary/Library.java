@@ -5,11 +5,15 @@ package basiclibrary;
 
 import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Library {
 
-    // lab 02
-    // this function is a random dice generator. n represents the number of dice you would like to roll.
+    //////////////// LAB 02 ////////////////////
+
+    /////////// DICE ////////////////
+
+    // random dice generator. n represents the number of dice you would like to roll, returns a randomized array of n number of dice
     public int[] roll(int n) {
         Random rand = new Random(); // getting a random number
         int[] diceArray = new int[n]; // creating an array of int of size n - this will get returned
@@ -21,8 +25,13 @@ public class Library {
         return diceArray; // return the new array of dice
     }
 
+    /////////// CONTAINS DUPLICATES ////////////////
+
     // this function checks for duplicates values in a single array
     public boolean containsDuplicate(int[] array) { // returns a boolean and takes in a single array of int
+        if (array.length <= 1) {
+            throw new IllegalArgumentException("not enough elements in array");
+        }
         for (int i = 0; i < array.length; i++) { // using a nested for loop here to compare indexes
             for (int j = i + 1; j < array.length; j++) {
                 if (array[i] == (array[j])) { // returns true is the value at index[i] is equal to the values at
@@ -34,31 +43,83 @@ public class Library {
         return false;
     }
 
-    // this function simply calculates the average value of a single array: [1 + 2 + 3 + 4 + 5] = 15 /length(5) = average 3
+    //////////// CALCULATING AVERAGES ///////////////
+
+    // VARIATION 0NE
+
+    // calculate the average value of a single array and returns that value.
+    // Example: [1 + 2 + 3 + 4 + 5] = 15 /length(5) = average 3
     public double calculateArrayAverage(int[] array) { // returns a double and takes in an array of int[]
+        if (array.length < 1) {
+            throw new IllegalArgumentException("empty array");
+        }
         int sum = 0; // initializing a sum counter - this will add each i iteration in the for loop to the sum total
-        for(int i = 0; i < array.length; i++) { // entering for loop
+        for (int i = 0; i < array.length; i++) { // entering for loop
             sum += array[i]; // add input array value at index[i] to sum counter, then i gets incremented for next for
-            // loop and we continue to add the elements at index[i] until conditional i < array.length becomes false.
+            // loop and we continue to add the elements at index[i] until conditional (i < array.length) becomes false.
         }
         return (double) sum / array.length; // get average by dividing the total sum by length of input array, then
         // cast to double.
     }
 
-    // this function calculates the average of nested arrays and returns the array with the lowest average
-    public int[] calculateLowestArraysOfArraysAverage(int[][] array){
-        int returnIndex = 0; // initializing an index variable so we can return the input array at that index
-        double lowAvg = calculateArrayAverage(array[0]); // setting a base case for the first for loop iteration
-        double currAvg; // this will hold the current array index avg for comparison
-        for(int i = 1; i < array.length; i++){ // enter for loop starting at index 1
-           currAvg = calculateArrayAverage(array[i]); // calculating the array at index i with method above
-           if(currAvg < lowAvg) { // is currAvg less than lowAvg?
-               lowAvg = currAvg; // assign currAvg to be the new lowAvg
-               returnIndex = i; // move up the index
-           }
-        } return array[returnIndex];
+    // VARIATION TWO
+
+    // calculate the average value of a single array (using built-in methods)
+    public int calculateArrayAverageGetSum(int[] array){
+        if (array.length < 1) {
+            throw new IllegalArgumentException("empty array");
+        }
+        return Arrays.stream(array).sum();
+    }
+    public double findAverage(int[] array) {
+        int sum = calculateArrayAverageGetSum(array);
+        return (double) sum / array.length;
     }
 
 
+    ////////////// ARRAYS OF ARRAYS ////////////////
+
+    // VARIATION ONE
+
+    // calculates the average of nested arrays and returns the array with the lowest average
+    public int[] calculateLowestArraysOfArraysAverage(int[][] array) {
+        if(array.length <= 1){ // make sure we have at least two indexes in our input array, else throw new illegalArgExcept
+            throw new IllegalArgumentException("input array is not a 2d array");
+        }
+        int returnIndex = 0; // initializing an index variable so we can return the input array at that index
+        double lowAvg = calculateArrayAverage(array[0]); // getting an initial low average by calling our own method and passing in the input array[0]
+        double currAvg; // this will hold the current array index avg for comparison
+        for (int i = 1; i < array.length; i++) { // enter for loop starting at index 1
+            currAvg = calculateArrayAverage(array[i]); // calculating the array average at index i with our own method
+            if (currAvg < lowAvg) { // is currAvg less than lowAvg?
+                lowAvg = currAvg; // assign currAvg to be the new lowAvg
+                returnIndex = i; // move up the index
+            }
+        }
+        return array[returnIndex];
+    }
+
+    // VARIATION TWO
+
+    // calculate the average of nested arrays and returning the array with the lowest average
+    public int[] calculateLowestArraysOfArraysAverageWithPositiveInfinity(int[][] array) {
+        if(array.length <= 1){ // make sure we have the correct input, else throw new illegalArgExcept
+            throw new IllegalArgumentException("input array is not a 2d array");
+        }
+        double lowAvg = Double.POSITIVE_INFINITY; // POSITIVE_INFINITY gets an infinitely positive number - used for our comparison operation
+        int[] lowArray = array[0]; // getting first array from our nested input array at index 0
+        for (int i = 1; i < array.length; i++) { // nested for loop to get value at [i][j] and adding to the sum
+                double sum = 0;
+            for (int j = 0; j < array[i].length; j++) {
+                sum += array[i][j];
+            }
+            double currAvg = sum / array[i].length; // getting average with some math: sum / length of the array at index i
+            if (currAvg < lowAvg) { // is currAvg less than lowArray?
+                lowAvg = currAvg; // assign currAvg to be the new lowAvg
+                lowArray = array[i]; // as i gets incremented, we move to the next index in our input array
+            }
+        }
+        return lowArray;
+    }
 }
 
