@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c6dc343-0cb4-47fa-b62c-2d82268c8716" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/bin/main/basiclibrary/Library.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/bin/test/basiclibrary/LibraryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/basiclibrary/Library.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/main/java/basiclibrary/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/basiclibrary/Library.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/test/java/basiclibrary/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/basiclibrary/LibraryTest.java" afterDir="false" />
     </list>
@@ -49,6 +44,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -64,7 +67,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
-  <component name="RunManager" selected="Gradle.LibraryTest.calculateLowestAverageOfDifferentSizeArrays">
+  <component name="RunManager" selected="Gradle.LibraryTest">
     <configuration name="LibraryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -88,7 +91,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LibraryTest.calculateArrayAverageValues" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LibraryTest.arrayContainsDuplicatesIllegalArgumentException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -101,7 +104,7 @@
           <list>
             <option value=":lib:test" />
             <option value="--tests" />
-            <option value="&quot;basiclibrary.LibraryTest.calculateArrayAverageValues&quot;" />
+            <option value="&quot;basiclibrary.LibraryTest.arrayContainsDuplicatesIllegalArgumentException&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -111,7 +114,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LibraryTest.calculateArrayAverageWithOnlyOneElement" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LibraryTest.calculateArrayAverageValuesSecondMethod" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -124,7 +127,7 @@
           <list>
             <option value=":lib:test" />
             <option value="--tests" />
-            <option value="&quot;basiclibrary.LibraryTest.calculateArrayAverageWithOnlyOneElement&quot;" />
+            <option value="&quot;basiclibrary.LibraryTest.calculateArrayAverageValuesSecondMethod&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -134,7 +137,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LibraryTest.calculateLowestAverageInArraysOfArrays" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LibraryTest.calculateArrayAverageWithBuiltInMethods" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -147,7 +150,7 @@
           <list>
             <option value=":lib:test" />
             <option value="--tests" />
-            <option value="&quot;basiclibrary.LibraryTest.calculateLowestAverageInArraysOfArrays&quot;" />
+            <option value="&quot;basiclibrary.LibraryTest.calculateArrayAverageWithBuiltInMethods&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -157,7 +160,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LibraryTest.calculateLowestAverageOfDifferentSizeArrays" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LibraryTest.calculateArrayAverageWithEmptyArray" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -170,7 +173,7 @@
           <list>
             <option value=":lib:test" />
             <option value="--tests" />
-            <option value="&quot;basiclibrary.LibraryTest.calculateLowestAverageOfDifferentSizeArrays&quot;" />
+            <option value="&quot;basiclibrary.LibraryTest.calculateArrayAverageWithEmptyArray&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -182,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.LibraryTest.calculateLowestAverageOfDifferentSizeArrays" />
-        <item itemvalue="Gradle.LibraryTest.calculateArrayAverageWithOnlyOneElement" />
         <item itemvalue="Gradle.LibraryTest" />
-        <item itemvalue="Gradle.LibraryTest.calculateLowestAverageInArraysOfArrays" />
-        <item itemvalue="Gradle.LibraryTest.calculateArrayAverageValues" />
+        <item itemvalue="Gradle.LibraryTest.calculateArrayAverageValuesSecondMethod" />
+        <item itemvalue="Gradle.LibraryTest.calculateArrayAverageWithBuiltInMethods" />
+        <item itemvalue="Gradle.LibraryTest.calculateArrayAverageWithEmptyArray" />
+        <item itemvalue="Gradle.LibraryTest.arrayContainsDuplicatesIllegalArgumentException" />
       </list>
     </recent_temporary>
   </component>

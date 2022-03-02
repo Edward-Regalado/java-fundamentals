@@ -1,6 +1,5 @@
 # Lab: 02 - Arrays, Loops, Imports and ArrayLists
 
-[Root Directory](../basics/)
 
 ## Overview
 
@@ -30,3 +29,5 @@
 
 - Use JUnit to write at least one test for each of the Feature Tasks.
 - Your tests should ensure that each of your methods work correctly.
+
+- [Root Directory](/lib/src/main/java/basiclibrary/Library.java)
