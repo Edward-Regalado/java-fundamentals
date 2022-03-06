@@ -4,6 +4,7 @@
 
 ### Maps
 [Link to PR](https://github.com/Edward-Regalado/java-fundamentals/pull/13)
+[Link to Code](../../java-fundamentals/basiclibrary/lib/src/main/java/basiclibrary/Library.java)
 ```
 // Daily average temperatures for Seattle, October 1-28 2017
 int[][] weeklyMonthTemperatures = {
