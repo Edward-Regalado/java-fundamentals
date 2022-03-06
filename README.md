@@ -10,4 +10,9 @@
 ### Lab: 02 - Arrays, For Loops and Testing
 
 [README](basiclibrary/README.md)  
-[Root Dir](basiclibrary)  
+[Root Dir](basiclibrary) 
+
+### Lab: 03 - Maps and File I/O
+
+[README](linter/README.md)  
+[Root Dir](linter)  
