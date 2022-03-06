@@ -3,6 +3,7 @@
 ### Feature Tasks
 
 ### Maps
+
 [Link to PR](https://github.com/Edward-Regalado/java-fundamentals/pull/13)  
 [Link to Code](../basiclibrary/lib/src/main/java/basiclibrary/Library.java)
 ```
@@ -16,6 +17,9 @@ int[][] weeklyMonthTemperatures = {
 ```
 
 ### Analyzing Weather Data
+
+[Link to PR](https://github.com/Edward-Regalado/java-fundamentals/pull/13)  
+[Link to Code](../basiclibrary/lib/src/main/java/basiclibrary/Library.java)
 
 - Use the October Seattle weather data above. Iterate through all of the data to find the min and max values. Use a 
 `HashSet` of type `Integer` to keep track of all the unique temperatures seen. 
