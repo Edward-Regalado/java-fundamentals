@@ -3,12 +3,43 @@
  */
 package linter;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Scanner;
+
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
+    public static void main(String[] args) {
+
+        String file = "app/src/main/java/resources/gates.js";
+        System.out.println(linter(file));
     }
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+    public static String linter(String file) {
+        int line = 0;
+        StringBuilder error = new StringBuilder();
+        try {
+            Path filePath = Paths.get(file);
+            Scanner scanner = new Scanner(new BufferedReader(new FileReader(file)));
+
+            while(scanner.hasNextLine()) {
+                line++;
+                String string = scanner.nextLine();
+                if (string.isEmpty() || string.endsWith("{") || string.endsWith("}") || string.endsWith(";") || string.contains("if") || string.contains("else")) {
+                    continue;
+                } else {
+                    error.append("Line ").append(line).append(": Missing semicolon.\n");
+                }
+            }
+        } catch (Exception e) {
+            System.out.println(e + "Error on line: " + line);
+        }
+        if (error.length() == 0) {
+            error.append("File has no errors!");
+        }
+            return error.toString();
     }
 }
+
+
