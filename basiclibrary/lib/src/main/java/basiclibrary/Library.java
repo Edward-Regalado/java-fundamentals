@@ -3,9 +3,7 @@
  */
 package basiclibrary;
 
-import java.util.Arrays;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 public class Library {
 
@@ -65,12 +63,13 @@ public class Library {
     // VARIATION TWO
 
     // calculate the average value of a single array (using built-in methods)
-    public int calculateArrayAverageGetSum(int[] array){
+    public int calculateArrayAverageGetSum(int[] array) {
         if (array.length < 1) {
             throw new IllegalArgumentException("empty array");
         }
         return Arrays.stream(array).sum();
     }
+
     public double findAverage(int[] array) {
         int sum = calculateArrayAverageGetSum(array);
         return (double) sum / array.length;
@@ -83,7 +82,7 @@ public class Library {
 
     // calculates the average of nested arrays and returns the array with the lowest average
     public int[] calculateLowestArraysOfArraysAverage(int[][] array) {
-        if(array.length <= 1){ // make sure we have at least two indexes in our input array, else throw new illegalArgExcept
+        if (array.length <= 1) { // make sure we have at least two indexes in our input array, else throw new illegalArgExcept
             throw new IllegalArgumentException("input array is not a 2d array");
         }
         int returnIndex = 0; // initializing an index variable so we can return the input array at that index
@@ -103,13 +102,13 @@ public class Library {
 
     // calculate the average of nested arrays and returning the array with the lowest average
     public int[] calculateLowestArraysOfArraysAverageWithPositiveInfinity(int[][] array) {
-        if(array.length <= 1){ // make sure we have the correct input, else throw new illegalArgExcept
+        if (array.length <= 1) { // make sure we have the correct input, else throw new illegalArgExcept
             throw new IllegalArgumentException("input array is not a 2d array");
         }
         double lowAvg = Double.POSITIVE_INFINITY; // POSITIVE_INFINITY gets an infinitely positive number - used for our comparison operation
         int[] lowArray = array[0]; // getting first array from our nested input array at index 0
         for (int i = 1; i < array.length; i++) { // nested for loop to get value at [i][j] and adding to the sum
-                double sum = 0;
+            double sum = 0;
             for (int j = 0; j < array[i].length; j++) {
                 sum += array[i][j];
             }
@@ -121,5 +120,56 @@ public class Library {
         }
         return lowArray;
     }
+
+    //////////// LAB 3 ////////////
+
+    // analyzing weather data
+    public String analyzingWeatherData(int[][] array) {
+        int lowTemp = Integer.MAX_VALUE;
+        int highTemp = Integer.MIN_VALUE;
+        HashSet<Integer> uniqueTemps = new HashSet<>();
+        for (int[] ints : array) {
+            for (int anInt : ints) {
+                if (anInt < lowTemp) {
+                    lowTemp = anInt;
+                }
+                if (anInt > highTemp) {
+                    highTemp = anInt;
+                }
+                uniqueTemps.add(anInt);
+            }
+        }
+        StringBuilder results = new StringBuilder();
+        results.append("High: ").append(highTemp).append("\n");
+        results.append("Low: ").append(lowTemp).append("\n");
+        for (int n = lowTemp; n < highTemp; n++) {
+            if (!uniqueTemps.contains(n)) {
+                results.append("Never saw temperature: ").append(n).append("\n");
+            }
+        }
+        return results.toString();
+    }
+
+    // tallying votes
+    public String tally(List<String> array){
+        HashMap<String, Integer> votes = new HashMap<>();
+        int numberOfVotes = Integer.MIN_VALUE;
+        String winner = "";
+        for(String name : array){
+            if(!votes.containsKey(name)){
+                votes.put(name, 0);
+            } else {
+                votes.put(name, votes.get(name) + 1);
+            }
+            for(String person : array){
+                if(votes.get(name) > numberOfVotes){
+                    numberOfVotes = votes.get(name);
+                    winner = name;
+                }
+            }
+        }
+        return winner + " received the most votes!";
+    }
 }
+
 

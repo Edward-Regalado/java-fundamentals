@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 //import static org.junit.jupiter.api.AssertTrue.assertTrue;
 
@@ -179,5 +180,51 @@ class LibraryTest {
     }
 
     //////// LAB 03 ////////////////
+
+    @Test
+    @DisplayName("analyzing weather data")
+     void testAnalyzingWeatherData(){
+    Library sut = new Library();
+    int[][] weeklyMonthTemperatures = {
+            {66, 64, 58, 65, 71, 57, 60},
+            {57, 65, 65, 70, 72, 65, 51},
+            {55, 54, 60, 53, 59, 57, 61},
+            {65, 56, 55, 52, 55, 62, 57}
+    };
+    String expectedResult =
+            """
+                    High: 72
+                    Low: 51
+                    Never saw temperature: 63
+                    Never saw temperature: 67
+                    Never saw temperature: 68
+                    Never saw temperature: 69
+                    """
+            ;
+    String result = sut.analyzingWeatherData(weeklyMonthTemperatures);
+    System.out.println("here are my results: " + result);
+    assertEquals(expectedResult,  result);
+    }
+
+    @Test
+    @DisplayName("tallying votes")
+    void testTallyingVote(){
+        Library sut = new Library();
+        List<String> votes = new ArrayList<>();
+        votes.add("Bush");
+        votes.add("Bush");
+        votes.add("Bush");
+        votes.add("Shrub");
+        votes.add("Hedge");
+        votes.add("Shrub");
+        votes.add("Bush");
+        votes.add("Hedge");
+        votes.add("Bush");
+
+        String winner = sut.tally(votes);
+        String expected = "Bush received the most votes!";
+        System.out.println(winner + " received the most votes!");
+        assertEquals(expected, winner);
+    }
 
 }

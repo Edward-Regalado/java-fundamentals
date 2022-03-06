@@ -5,11 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c6dc343-0cb4-47fa-b62c-2d82268c8716" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../linter/app/src/main/java/resources/empty.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../linter/app/src/main/java/resources/fiveErrors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../linter/app/src/main/java/resources/gates.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../linter/app/src/main/java/resources/noErrors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../linter/app/src/main/java/resources/noErrorsMultiLines.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../linter/app/src/main/java/resources/oneError.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../linter/app/src/main/java/resources/tenErrors.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/main/java/basiclibrary/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/basiclibrary/Library.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/test/java/basiclibrary/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/basiclibrary/LibraryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/app/src/main/java/linter/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/app/src/main/java/linter/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/app/src/test/java/linter/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/app/src/test/java/linter/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +66,10 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/lib/src/test/java/basiclibrary/LibraryTest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/main/java/basiclibrary/Library.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -64,11 +82,24 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../linter" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.18768328" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunManager" selected="Gradle.LibraryTest">
-    <configuration name="LibraryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="basiclibrary" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.LibraryTest.testTallyingVote">
+    <configuration name="LibraryTest.calculateLowAverageArraysOfArraysWithPositiveInfinity" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -81,7 +112,7 @@
           <list>
             <option value=":lib:test" />
             <option value="--tests" />
-            <option value="&quot;basiclibrary.LibraryTest&quot;" />
+            <option value="&quot;basiclibrary.LibraryTest.calculateLowAverageArraysOfArraysWithPositiveInfinity&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -91,7 +122,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LibraryTest.arrayContainsDuplicatesIllegalArgumentException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LibraryTest.testAnalyzingWeatherData" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -104,7 +135,7 @@
           <list>
             <option value=":lib:test" />
             <option value="--tests" />
-            <option value="&quot;basiclibrary.LibraryTest.arrayContainsDuplicatesIllegalArgumentException&quot;" />
+            <option value="&quot;basiclibrary.LibraryTest.testAnalyzingWeatherData&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -114,7 +145,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LibraryTest.calculateArrayAverageValuesSecondMethod" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LibraryTest.testTallyingVote" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -127,7 +158,7 @@
           <list>
             <option value=":lib:test" />
             <option value="--tests" />
-            <option value="&quot;basiclibrary.LibraryTest.calculateArrayAverageValuesSecondMethod&quot;" />
+            <option value="&quot;basiclibrary.LibraryTest.testTallyingVote&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -137,7 +168,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LibraryTest.calculateArrayAverageWithBuiltInMethods" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="basiclibrary" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -147,49 +178,20 @@
           <list />
         </option>
         <option name="taskNames">
-          <list>
-            <option value=":lib:test" />
-            <option value="--tests" />
-            <option value="&quot;basiclibrary.LibraryTest.calculateArrayAverageWithBuiltInMethods&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="LibraryTest.calculateArrayAverageWithEmptyArray" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
           <list />
         </option>
-        <option name="taskNames">
-          <list>
-            <option value=":lib:test" />
-            <option value="--tests" />
-            <option value="&quot;basiclibrary.LibraryTest.calculateArrayAverageWithEmptyArray&quot;" />
-          </list>
-        </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.LibraryTest" />
-        <item itemvalue="Gradle.LibraryTest.calculateArrayAverageValuesSecondMethod" />
-        <item itemvalue="Gradle.LibraryTest.calculateArrayAverageWithBuiltInMethods" />
-        <item itemvalue="Gradle.LibraryTest.calculateArrayAverageWithEmptyArray" />
-        <item itemvalue="Gradle.LibraryTest.arrayContainsDuplicatesIllegalArgumentException" />
+        <item itemvalue="Gradle.LibraryTest.testTallyingVote" />
+        <item itemvalue="Gradle.LibraryTest.testAnalyzingWeatherData" />
+        <item itemvalue="Gradle.LibraryTest.calculateLowAverageArraysOfArraysWithPositiveInfinity" />
       </list>
     </recent_temporary>
   </component>
@@ -203,5 +205,16 @@
       <updated>1646008386779</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
