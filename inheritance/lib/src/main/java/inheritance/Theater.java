@@ -12,34 +12,28 @@ public class Theater extends Business {
 
     }
 
+    public Theater(){
+        //// DEFAULT CONSTRUCTOR
+    }
+
     public String addMovie(String movie){
         movieList.add(movie);
         return movie;
     }
 
     public void removeMovie(String movie){
-
         movieList.remove(movie);
     }
 
     @Override
     public String toString() {
-        return "Theater{" +
-                "name='" + name + '\'' +
-                ", movieList=" + movieList +
-                '}';
+        return "Review- " +
+                "Name: '" + name + '\'' +
+                ", Price: " + price +
+                ", Stars: " + star +
+                ", averageStarRating: " + averageStarRating +
+                ", totalBusinessReviews: " + totalBusinessReviews +
+                ", reviewList: " + reviewList +
+                ", movieList: " + movieList;
     }
-
-
-//    @Override
-//    public String toString() {
-//        return "Review- " +
-//                "Name: '" + name + '\'' +
-//                ", Price: " + price +
-//                ", Star: " + star +
-//                ", averageStarRating: " + averageStarRating +
-//                ", totalBusinessReviews: " + totalBusinessReviews +
-//                ", reviewList: " + reviewList +
-//                ", movieList: " + movieList;
-//    }
 }

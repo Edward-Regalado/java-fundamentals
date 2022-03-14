@@ -3,46 +3,50 @@
  */
 package inheritance;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Business {
     ///// FIELD/PROPERTIES /////
     String name;
     int price;
-    float star = 0.0f;
-    float averageStarRating = 0;
-    int totalBusinessReviews = 0;
+    int star;
+    float averageStarRating;
+    int totalBusinessReviews;
     ArrayList<Review> reviewList = new ArrayList<>();
 
 
     ///// CONSTRUCTOR /////
+
+    public Business(){
+        //// DEFAULT CONSTRUCTOR
+    }
     public Business(String name, int price) {
         this.name = name;
         this.price = price;
     }
 
-
-    ///// ADD REVIEW /////
+    ///// REVIEW INSTANCE FOR BUSINESS CLASS - ADDS TO REVIEW LIST AND DOES MATH /////
     public Review addReview(Review review) {
         reviewList.add(review);
         this.star += review.stars;
         this.totalBusinessReviews++;
-        this.averageStarRating = (float) (this.star) / (float) (totalBusinessReviews);
+        this.averageStarRating = this.star / (float) (totalBusinessReviews);
         return review;
     }
 
-    ///// STRING /////
+    ///// TO STRING METHOD /////
         @Override
         public String toString () {
             return "Business- " +
                     "Name: '" + name + '\'' +
                     ", Price: $" + price +
-                    ", Total Stars: " + star +
+//                    ", Total Stars: " + star +
                     ", Average Star Rating: " + averageStarRating +
-                    ", Toatal Business Reviews: " + totalBusinessReviews +
+                    ", Total Business Reviews: " + totalBusinessReviews +
                     ", Reviews: " + reviewList;
         }
+
+        /////////// GETTERS AND SETTERS ///////////
 
     public String getName() {
         return name;
@@ -64,12 +68,12 @@ public class Business {
         return star;
     }
 
-    public void setStar(float star) {
+    public void setStar(int star) {
         this.star = star;
     }
 
-    public float getAverageStarRating() {
-        return averageStarRating;
+    public double getAverageStarRating() {
+        return  averageStarRating;
     }
 
     public void setAverageStarRating(float averageStarRating) {
