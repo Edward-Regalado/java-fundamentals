@@ -5,25 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c6dc343-0cb4-47fa-b62c-2d82268c8716" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../linter/app/src/main/java/resources/empty.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../linter/app/src/main/java/resources/fiveErrors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../linter/app/src/main/java/resources/gates.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../linter/app/src/main/java/resources/noErrors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../linter/app/src/main/java/resources/noErrorsMultiLines.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../linter/app/src/main/java/resources/oneError.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../linter/app/src/main/java/resources/tenErrors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/basiclibrary/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/basiclibrary/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/test/java/basiclibrary/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/basiclibrary/LibraryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linter/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linter/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../linter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linter/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linter/app/src/main/java/linter/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/app/src/main/java/linter/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linter/app/src/test/java/linter/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/app/src/test/java/linter/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +67,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../linter" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../inheritance" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.18768328" />
     <property name="project.structure.side.proportion" value="0.0" />

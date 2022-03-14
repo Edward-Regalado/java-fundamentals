@@ -7,9 +7,10 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class BusinessTest {
+
     @Test void createNewBusiness() {
-        Business sut = new Business("BestBuy ", 30);
-        System.out.println(sut.toString());
-        assertTrue(true);
+        Business business = new Business("Best Buy ", 30);
+        System.out.println(business);
+        assertEquals("Business- Name: 'Best Buy ', Price: $30, Total Stars: 0.0, Average Star Rating: 0.0, Toatal Business Reviews: 0, Reviews: []", business.toString());
     }
 }
