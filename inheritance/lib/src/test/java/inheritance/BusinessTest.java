@@ -3,13 +3,62 @@
  */
 package inheritance;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class BusinessTest {
+
+    @DisplayName("instantiate new business")
     @Test void createNewBusiness() {
-        Business sut = new Business("BestBuy ", 30);
-        System.out.println(sut.toString());
-        assertTrue(true);
+        Business business = new Business("Best Buy ", 30);
+        assertEquals(business.getClass(), Business.class);
     }
+
+    @DisplayName("test get name and price")
+    @Test void testGetName(){
+        Business business = new Business("Game Stop", 20);
+        assertEquals("Game Stop", business.getName());
+        assertEquals(20, business.getPrice());
+    }
+
+    @DisplayName("test set name and price")
+    @Test void testSetNameAndPrice(){
+        Business business = new Business();
+        business.setName("Game Stop");
+        business.setPrice(20);
+        assertEquals("Game Stop", business.getName());
+        assertEquals(20, business.getPrice());
+    }
+
+    @DisplayName("test setters")
+    @Test void testBusinessSetters(){
+        Business business = new Business("Best Buy", 30);
+        Review myReview = new Review("Great place!", "John Smith", 1, business);
+        business.addReview(myReview);
+        business.setName("Game Stop");
+        business.setPrice(20);
+        business.setStar(3);
+        business.setAverageStarRating(3);
+        business.setTotalBusinessReviews(1);
+        assertEquals("Game Stop", business.getName());
+        assertEquals(20, business.getPrice());
+        assertEquals(3, business.getStar());
+        assertEquals(3.0, business.getAverageStarRating());
+    }
+
+    @DisplayName("test getters")
+    @Test void testBusinessGetters(){
+        Business business = new Business("Best Buy", 30);
+        Review myReview = new Review("Great place!", "John Smith", 4, business);
+        business.addReview(myReview);
+        assertEquals("Best Buy", business.getName());
+        assertEquals(30, business.getPrice());
+        assertEquals(4, business.getStar());
+        assertEquals(4.0, business.getAverageStarRating());
+        assertEquals(1, business.getTotalBusinessReviews());
+        assertEquals("[Review- Body: Great place!', Author: 'John Smith', Stars: 4.0, Business: 'Best Buy', Movie: 'null']", business.getReviews().toString());
+    }
+
+
 }

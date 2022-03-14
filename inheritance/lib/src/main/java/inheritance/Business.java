@@ -3,29 +3,98 @@
  */
 package inheritance;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Business {
+    ///// FIELD/PROPERTIES /////
     String name;
+    int price;
+    int star;
+    float averageStarRating;
+    int totalBusinessReviews;
+    ArrayList<Review> reviewList = new ArrayList<>();
 
-    String dollar = "$";
-    int price = 0;
-    float star = 0.0f;
-    float averageStarRating = 0;
-    int totalBusinessReviews = 0;
 
+    ///// CONSTRUCTOR /////
+
+    public Business(){
+        //// DEFAULT CONSTRUCTOR
+    }
     public Business(String name, int price) {
         this.name = name;
         this.price = price;
     }
 
-    public String toString(){
-        String str = "";
-        str += "Name:" + this.name + "Price: $" + this.price;
-        return str;
+    ///// REVIEW INSTANCE FOR BUSINESS CLASS - ADDS TO REVIEW LIST AND DOES MATH /////
+    public Review addReview(Review review) {
+        reviewList.add(review);
+        this.star += review.stars;
+        this.totalBusinessReviews++;
+        this.averageStarRating = this.star / (float) (totalBusinessReviews);
+        return review;
     }
 
+    ///// TO STRING METHOD /////
+        @Override
+        public String toString () {
+            return "Business- " +
+                    "Name: '" + name + '\'' +
+                    ", Price: $" + price +
+//                    ", Total Stars: " + star +
+                    ", Average Star Rating: " + averageStarRating +
+                    ", Total Business Reviews: " + totalBusinessReviews +
+                    ", Reviews: " + reviewList;
+        }
+
+        /////////// GETTERS AND SETTERS ///////////
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public float getStar() {
+        return star;
+    }
+
+    public void setStar(int star) {
+        this.star = star;
+    }
+
+    public double getAverageStarRating() {
+        return  averageStarRating;
+    }
+
+    public void setAverageStarRating(float averageStarRating) {
+        this.averageStarRating = averageStarRating;
+    }
+
+    public int getTotalBusinessReviews() {
+        return totalBusinessReviews;
+    }
+
+    public void setTotalBusinessReviews(int totalBusinessReviews) {
+        this.totalBusinessReviews = totalBusinessReviews;
+    }
+
+    public ArrayList<Review> getReviews() {
+        return reviewList;
+    }
+
+    public void setReviews(ArrayList<Review> reviews) {
+        this.reviewList = reviews;
+    }
 }
 
 
